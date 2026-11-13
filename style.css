@@ -1,0 +1,508 @@
+/* ESTILOS GENERALES */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+body {
+    background-color: #fcfbfa;
+    color: #2b2b2b;
+    overflow-x: hidden;
+}
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 6%;
+    background: #fff;
+    border-bottom: 1px solid #eee;
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: #4a3e3d;
+}
+
+.logo span span {
+    color: #8c6f96;
+}
+
+.logo small {
+    font-size: 0.6rem;
+    letter-spacing: 1px;
+    color: #999;
+}
+
+.nav-links {
+    display: flex;
+    gap: 35px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #666;
+    font-size: 0.95rem;
+    font-weight: 500;
+}
+
+.nav-links a.active, .nav-links a:hover {
+    color: #8c6f96;
+}
+
+.btn-espacio {
+    background: #f3eff5;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 20px;
+    color: #72597e;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/* HERO SECTION */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 6%;
+    gap: 40px;
+}
+
+.hero-content {
+    max-width: 550px;
+}
+
+.subtitle {
+    font-size: 0.75rem;
+    letter-spacing: 2px;
+    color: #8c6f96;
+    font-weight: 700;
+}
+
+.hero h1 {
+    font-size: 3.8rem;
+    line-height: 1.1;
+    color: #2c2528;
+    margin: 15px 0 20px 0;
+}
+
+.hero p {
+    color: #666;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.hero-buttons {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.btn-primary {
+    background: #72597e;
+    color: white;
+    border: none;
+    padding: 14px 25px;
+    border-radius: 30px;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    box-shadow: 0 4px 15px rgba(114, 89, 126, 0.3);
+}
+
+.link-secondary {
+    text-decoration: none;
+    color: #444;
+    font-weight: 600;
+    font-size: 0.95krem;
+}
+
+.hero-quote {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background: #fbf9fa;
+    padding: 15px 20px;
+    border-radius: 12px;
+    border-left: 3px solid #8c6f96;
+}
+
+.hero-quote i {
+    font-size: 1.5rem;
+    color: #8c6f96;
+}
+
+.hero-quote strong {
+    font-size: 0.9rem;
+    color: #333;
+}
+
+.hero-quote p {
+    font-size: 0.8rem;
+    margin: 0;
+    color: #777;
+}
+
+.hero-image {
+    position: relative;
+}
+
+.image-card {
+    position: relative;
+    border-radius: 200px 200px 20px 20px;
+    overflow: hidden;
+    width: 380px;
+    height: 450px;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+}
+
+.image-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.floating-badge {
+    position: absolute;
+    bottom: 25px;
+    right: 20px;
+    background: white;
+    padding: 10px 18px;
+    border-radius: 30px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    color: #444;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.floating-badge i {
+    color: #8c6f96;
+}
+
+/* FEATURES / TARJETAS INFORMATIVAS */
+.features {
+    display: flex;
+    justify-content: space-around;
+    padding: 30px 6%;
+    background: #fff;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+}
+
+.feature-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.feature-item i {
+    font-size: 1.4rem;
+    color: #8c6f96;
+}
+
+.feature-item h4 {
+    font-size: 0.9rem;
+    color: #333;
+}
+
+.feature-item p {
+    font-size: 0.75rem;
+    color: #777;
+}
+
+/* PLAYLIST SECTION */
+.playlist-section {
+    padding: 80px 6%;
+}
+
+.section-title {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto 40px auto;
+}
+
+.section-title small {
+    color: #8c6f96;
+    font-weight: 700;
+    letter-spacing: 2px;
+    font-size: 0.75rem;
+}
+
+.section-title h2 {
+    font-size: 2.5rem;
+    color: #2c2528;
+    margin: 10px 0;
+}
+
+.section-title p {
+    color: #666;
+    font-size: 0.95rem;
+}
+
+.filter-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 40px;
+}
+
+.filter-btn {
+    background: #eee;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 20px;
+    font-weight: 600;
+    color: #555;
+    cursor: pointer;
+}
+
+.filter-btn.active {
+    background: #2c2528;
+    color: white;
+}
+
+.playlist-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 25px;
+}
+
+.playlist-card {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    padding: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.03);
+    transition: transform 0.3s ease;
+}
+
+.playlist-card:hover {
+    transform: translateY(-5px);
+}
+
+.card-img {
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+    height: 180px;
+    margin-bottom: 15px;
+}
+
+.card-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-img .tag {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: rgba(0,0,0,0.6);
+    color: white;
+    font-size: 0.7rem;
+    padding: 4px 10px;
+    border-radius: 10px;
+}
+
+.playlist-card h3 {
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.playlist-card p {
+    font-size: 0.85rem;
+    color: #777;
+    margin-bottom: 15px;
+}
+
+.play-link {
+    text-decoration: none;
+    color: #72597e;
+    font-weight: 600;
+    font-size: 0.85rem;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+/* QUOTE BANNER */
+.quote-banner {
+    background: #f4f0f5;
+    text-align: center;
+    padding: 70px 10%;
+}
+
+.quote-banner h2 {
+    font-size: 2rem;
+    color: #2c2528;
+    max-width: 800px;
+    margin: 0 auto 20px auto;
+    line-height: 1.3;
+}
+
+.quote-banner h2 span {
+    color: #8c6f96;
+}
+
+.quote-banner p {
+    color: #666;
+    max-width: 700px;
+    margin: 0 auto 30px auto;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+/* NEWSLETTER */
+.newsletter {
+    padding: 60px 6%;
+    text-align: center;
+}
+
+.newsletter-box {
+    background: #fff;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.03);
+}
+
+.newsletter-box small {
+    color: #8c6f96;
+    font-weight: 700;
+    letter-spacing: 2px;
+    font-size: 0.7rem;
+}
+
+.newsletter-box h2 {
+    font-size: 1.8rem;
+    margin: 10px 0;
+    color: #2c2528;
+}
+
+.newsletter-box p {
+    font-size: 0.85rem;
+    color: #666;
+    margin-bottom: 25px;
+}
+
+.input-group {
+    display: flex;
+    border: 1px solid #ddd;
+    border-radius: 30px;
+    overflow: hidden;
+    max-width: 400px;
+    margin: 0 auto 10px auto;
+}
+
+.input-group input {
+    flex: 1;
+    border: none;
+    padding: 12px 20px;
+    outline: none;
+    font-size: 0.9rem;
+}
+
+.input-group button {
+    background: #2c2528;
+    color: white;
+    border: none;
+    padding: 0 20px;
+    cursor: pointer;
+}
+
+.newsletter-box .note {
+    font-size: 0.75rem;
+    color: #999;
+}
+
+/* FOOTER */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 6%;
+    background: #fff;
+    border-top: 1px solid #eee;
+}
+
+.footer-logo {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-logo span {
+    font-weight: 700;
+    color: #4a3e3d;
+}
+
+.footer-logo span span {
+    color: #8c6f96;
+}
+
+.footer-logo small {
+    font-size: 0.75rem;
+    color: #777;
+    margin-top: 4px;
+}
+
+.footer-links {
+    display: flex;
+    gap: 25px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.bottom-bar {
+    text-align: center;
+    padding: 15px;
+    background: #faf8f9;
+    font-size: 0.75rem;
+    color: #888;
+    border-top: 1px solid #f0eef1;
+}
+
+/* BOTÓN FLOTANTE */
+.floating-contact {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    z-index: 100;
+}
+
+.floating-contact button {
+    background: #72597e;
+    color: white;
+    border: none;
+    padding: 12px 22px;
+    border-radius: 30px;
+    font-weight: 600;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}

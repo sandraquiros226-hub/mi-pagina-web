@@ -1,0 +1,26 @@
+MELODÍAS QUE SANAN — PROYECTO PARA VISUAL STUDIO CODE
+
+ESTRUCTURA
+- index.html
+- style.css
+- script.js
+- servidor/server.js
+- servidor/package.json
+- servidor/.env.example
+
+IMPORTANTE: Sofía usa Gemini. La clave API nunca va en index.html, style.css ni script.js.
+
+CONFIGURACIÓN INICIAL (solo una vez)
+1. Abre la carpeta completa melodias_que_sanan_visual en Visual Studio Code.
+2. Entra a la carpeta servidor.
+3. Copia .env.example y crea otro archivo llamado .env en esa misma carpeta.
+4. En .env pega tu clave real después de GEMINI_API_KEY= y guarda el archivo. No compartas esa clave.
+5. Abre una terminal en la carpeta servidor y ejecuta: npm install
+
+PARA ABRIR LA PÁGINA
+1. En la terminal, estando dentro de servidor, ejecuta: npm start
+2. Abre en el navegador: http://localhost:3000
+3. Deja esa terminal abierta mientras uses la página; allí funciona la conexión de Sofía con Gemini.
+
+No abras index.html directamente con doble clic para probar el chat: usa la dirección http://localhost:3000.
+Requisito: Node.js 18 o superior (incluye fetch).
